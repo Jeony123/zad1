@@ -1,0 +1,20 @@
+
+using System;
+using System.Collections.Generic;
+
+namespace zadachi
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			var phonebook = new Dictionary<string,string>();
+		phonebook["John Smith"] = "+1-555-8976";
+		phonebook["Ivan"] = "+1-55-981-9819";
+		phonebook.Remove("John Smith");
+		foreach(var pair in phonebook)
+			Console.WriteLine("{0} -> {1} ", pair.Key, pair.Value);
+                
+		}
+	}
+}
